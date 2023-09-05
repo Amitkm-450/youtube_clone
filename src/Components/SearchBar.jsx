@@ -19,7 +19,7 @@ const SearchBar = () => {
     >
       <input 
        className="search-bar"
-       placeholder="Dearch..."
+       placeholder="Search..."
        value=""
        onChange={() => {
 
