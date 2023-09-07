@@ -4,7 +4,7 @@ import { VideoCard, ChannelCard } from "./"
 
 
 const Videos = ({videos}) => {
- 
+  
   return (
     <Stack direction="row" flexWrap="wrap" gap={2} justifyContent="center">
        {videos.map((video,idx) => (
@@ -13,7 +13,7 @@ const Videos = ({videos}) => {
              video = {video}
            />}
            {video.id.channelId && <ChannelCard 
-             ChannelDetail = {video}
+             channelDetail = {video}
            />}
          </Box>
        ))}
