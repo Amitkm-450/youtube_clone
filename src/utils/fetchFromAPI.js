@@ -3,7 +3,6 @@ import axios from 'axios';
 
 export const BASE_URL = 'https://youtube-v31.p.rapidapi.com';
 
-console.log(process.env.REACT_APP_API_KEY)
 const options = {
     params: {
       maxResults: 50,
