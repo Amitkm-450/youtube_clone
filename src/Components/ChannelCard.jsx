@@ -3,7 +3,7 @@ import { CheckCircle } from "@mui/icons-material"
 import { Link } from "react-router-dom"
 
 
-import { demoProfilePicture, demoThumbnailUrl } from "../utils/constants"
+import {  demoThumbnailUrl } from "../utils/constants"
 const ChannelCard = ({channelDetail, marginTop}) => {
   
   return (
