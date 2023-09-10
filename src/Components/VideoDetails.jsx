@@ -19,17 +19,18 @@ const VideoDetails = () => {
        setVideoDetails(data.items[0])
     })
 
-    fetchFromAPI(`videos?part=snippet&relatedToVideoId=${id}&type=video`)
+    fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
     .then((data) => {
       setVideos(data.items)
     })
+  
   },[id])
   
   if(!videoDetails?.snippet) {
-    console.log("loading")
+    return ("loading")
   }
 
- 
+
 
   return (
     <Box minHeight="95vh">
